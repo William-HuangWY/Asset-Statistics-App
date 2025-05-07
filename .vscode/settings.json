@@ -1,0 +1,10 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[json][css][html][vue-html][vue]": {
+        "editor.tabSize": 2
+    },
+}

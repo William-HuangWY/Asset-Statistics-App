@@ -1,5 +1,14 @@
+@custom-variant dark (&:where(.dark, .dark *));
 @import "tailwindcss";
 
 @theme {
   --color-testgray: #555555;
+
+
+
+  /* --color-primary: theme(colors.blue.600);
+  --color-accent:  theme(colors.sky.600);
+
+  --color-navbar:  theme(colors.gray.50);
+  --color-navlink: theme(colors.slate.700); */
 }

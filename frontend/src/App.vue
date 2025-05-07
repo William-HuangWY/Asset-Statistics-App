@@ -1,10 +1,15 @@
 <script setup>
-import NavBar from './components/NavBar.vue'
+import { onMounted } from 'vue';
+import SideBar from './components/SideBar.vue'
+
+onMounted(() => {
+  document.cookie = 'locale=zh-TW';
+});
 </script>
 
 <template>
-  <div id="app-wrapper">
-    <NavBar />
+  <div id="app-wrapper" class="grid grid-cols-[220px_1fr] gap-4 p-4 ">
+    <SideBar />
     <router-view />
   </div>
 </template>
