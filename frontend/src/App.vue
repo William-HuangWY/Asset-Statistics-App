@@ -3,12 +3,12 @@ import { onMounted } from 'vue';
 import SideBar from './components/SideBar.vue'
 
 onMounted(() => {
-  document.cookie = 'locale=zh-TW';
+  document.cookie = 'locale=en';
 });
 </script>
 
 <template>
-  <div id="app-wrapper" class="grid grid-cols-[220px_1fr] gap-4 p-4 ">
+  <div id="app-wrapper" class="grid grid-cols-[240px_1fr] gap-4 p-4">
     <SideBar />
     <router-view />
   </div>
