@@ -1,6 +1,18 @@
 {
   "sidebar": {
-    "account": "AssetStats - CodeYing"
+    "account": "AssetStats - CodeYing",
+    "links": [
+      { "label": "Overview", "icon": "fa-solid fa-house"},
+      { "label": "Deposit", "icon": "fa-solid fa-coins" },
+      { "label": "Stock", "icon": "fa-solid fa-arrow-trend-up" },
+      { "label": "Transaction", "icon": "fa-solid fa-receipt" },
+      { "label": "others", "icon": "fa-solid fa-circle-info" }
+    ],
+    "commands": [
+      { "label": "Test1", "url": "/Test1" },
+      { "label": "Test2", "url": "/Test2" },
+      { "label": "Test3", "url": "/Test3" }
+    ]
   },
   "test": "Hello, World"
 }

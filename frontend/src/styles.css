@@ -3,8 +3,7 @@
 
 @theme {
   --color-testgray: #555555;
-
-
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", ui-sans-serif, system-ui, sans-serif;
 
   /* --color-primary: theme(colors.blue.600);
   --color-accent:  theme(colors.sky.600);

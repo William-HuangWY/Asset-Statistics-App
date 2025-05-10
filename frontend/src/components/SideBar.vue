@@ -1,6 +1,7 @@
 <script setup>
-import  AccountBox  from './SideBarElement/AccountBox.vue';
+import AccountBox  from './SideBarElement/AccountBox.vue';
 import SearchBox from './SideBarElement/SearchBox.vue';
+import RouteLinks from './SideBarElement/RouteLinks.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import SearchBox from './SideBarElement/SearchBox.vue';
     <div class="overflow-y-scroll sticky top-4 h-[calc(100vh-32px-48px)]">
       <AccountBox />
       <SearchBox />
+      <RouteLinks />
     </div>
   </div>
 </template>

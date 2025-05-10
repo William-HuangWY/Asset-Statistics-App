@@ -1,6 +1,18 @@
 {
   "sidebar": {
-    "account": "打碼的穎 - 資產狀態"
+    "account": "打碼的穎 - 資產狀態",
+    "links": [
+      { "label": "總覽", "icon": "fa-solid fa-house"},
+      { "label": "存款", "icon": "fa-solid fa-coins" },
+      { "label": "股票", "icon": "fa-solid fa-arrow-trend-up" },
+      { "label": "明細", "icon": "fa-solid fa-receipt" },
+      { "label": "其他", "icon": "fa-solid fa-circle-info" }
+    ],
+    "commands": [
+      { "label": "測試1", "url": "/Test1" },
+      { "label": "測試2", "url": "/Test2" },
+      { "label": "測試3", "url": "/Test3" }
+    ]
   },
   "test": "你好 世界"
 }
