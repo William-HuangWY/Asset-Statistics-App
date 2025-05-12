@@ -9,10 +9,18 @@
       { "label": "其他", "icon": "fa-solid fa-circle-info" }
     ],
     "commands": [
-      { "label": "測試1", "url": "/Test1" },
-      { "label": "測試2", "url": "/Test2" },
-      { "label": "測試3", "url": "/Test3" }
-    ]
+      { "label": "測試1", "url": "/Test1", "icon": "fa-solid fa-plus" },
+      { "label": "測試2", "url": "/Test2", "icon": "fa-solid fa-plus" },
+      { "label": "測試3", "url": "/Test3", "icon": "fa-solid fa-plus" }
+    ],
+    "role": {
+      "admin": "管理員模式",
+      "user": "使用者模式"
+    },
+    "advertisement": {
+      "content": "在我的網站上查看更多作品",
+      "button": "查看更多"
+    }
   },
   "test": "你好 世界"
 }

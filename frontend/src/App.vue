@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="app-wrapper" class="grid grid-cols-[250px_1fr] gap-4 p-4 font-sans font-normal">
+  <div id="app-wrapper" class="grid grid-cols-[260px_1fr] gap-4 p-4 font-sans font-normal">
     <SideBar />
     <router-view />
   </div>

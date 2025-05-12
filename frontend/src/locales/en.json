@@ -9,10 +9,18 @@
       { "label": "others", "icon": "fa-solid fa-circle-info" }
     ],
     "commands": [
-      { "label": "Test1", "url": "/Test1" },
-      { "label": "Test2", "url": "/Test2" },
-      { "label": "Test3", "url": "/Test3" }
-    ]
+      { "label": "Test1", "url": "/Test1", "icon": "fa-solid fa-plus" },
+      { "label": "Test2", "url": "/Test2", "icon": "fa-solid fa-plus" },
+      { "label": "Test3", "url": "/Test3", "icon": "fa-solid fa-plus" }
+    ],
+    "role": {
+      "admin": "Administrator",
+      "user": "User"
+    },
+    "advertisement": {
+      "content": "See more on my website",
+      "button": "Support"
+    }
   },
   "test": "Hello, World"
 }

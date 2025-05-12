@@ -2,6 +2,7 @@
 import AccountBox  from './SideBarElement/AccountBox.vue';
 import SearchBox from './SideBarElement/SearchBox.vue';
 import RouteLinks from './SideBarElement/RouteLinks.vue';
+import FooterBox from './SideBarElement/FooterBox.vue';
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import RouteLinks from './SideBarElement/RouteLinks.vue';
       <SearchBox />
       <RouteLinks />
     </div>
+    <FooterBox />
   </div>
 </template>

@@ -54,11 +54,12 @@ const showDropdown = computed(() =>
           @click="handleSelect(item)"
           class="px-4 py-2 hover:bg-blue-100 dark:hover:bg-sky-800 cursor-pointer text-sm text-gray-900 dark:text-gray-100"
         >
+          <i :class="item.icon + ' pr-2'"></i>
           {{ item.label }}
         </li>
       </ul>
       <div v-if="filteredItems.length === 0" class="px-4 py-2 text-sm text-gray-500 dark:text-gray-400">
-        No results found for 「<span class="text-violet-600 dark:text-violet-400">{{ modelValue }}</span>」
+        No results found for 「<span class="text-red-600 dark:text-red-400">{{ modelValue }}</span>」
       </div>
     </div>
   </div>
