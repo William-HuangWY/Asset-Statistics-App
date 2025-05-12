@@ -5,7 +5,7 @@ function openWebsite(url) {
 </script>
 
 <template>
-  <div class="flex sticky top-[calc(100vh-48px-16px)] flex-col h-12 border-t px-2 border-stone-300 dark:border-slate-700 justify-end text-xs">
+  <div class="z-30 flex sticky top-[calc(100vh-48px-16px)] flex-col h-12 border-t px-2 border-stone-300 dark:border-slate-700 justify-end text-xs">
     <div class="flex items-center justify-between">
       <div>
         <p class="pb-0.5 font-bold text-gray-950 dark:text-gray-50">{{ $t('sidebar.role.admin') }}</p>

@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-white rounded-lg pb-4 shadow h-[200vh]">Home Page</div>
+  <div>
+    Home Page
+  </div>
 </template>

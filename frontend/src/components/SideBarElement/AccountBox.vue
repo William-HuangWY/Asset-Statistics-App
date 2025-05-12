@@ -1,6 +1,6 @@
 <template>
   <div class="border-b mb-4 mt-2 pb-4 border-stone-300 dark:border-slate-700">
-    <button class="flex p-0.5 hover:bg-stone-200 rounded dark:hover:bg-slate-800
+    <button class="flex p-0.5 cursor-pointer hover:bg-stone-200 rounded dark:hover:bg-slate-800
     transition-colors relative gap-2 w-full items-center"
     >
       <img src="../../assets/CodeYing-AssetStats.svg" 

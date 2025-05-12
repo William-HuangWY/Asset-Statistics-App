@@ -1,6 +1,6 @@
 {
   "sidebar": {
-    "account": "打碼的穎 - 資產狀態",
+    "account": "資產狀態 - 打碼的穎",
     "links": [
       { "label": "總覽", "icon": "fa-solid fa-house"},
       { "label": "存款", "icon": "fa-solid fa-coins" },
@@ -20,6 +20,22 @@
     "advertisement": {
       "content": "在我的網站上查看更多作品",
       "button": "查看更多"
+    }
+  },
+  "topbar": {
+    "greeting": {
+      "general": { "text": "歡迎，", "icon": "fa-solid fa-user" },
+      "morning": { "text": "早上好，", "icon": "fa-solid fa-mountain-sun" },
+      "afternoon": { "text": "下午安，", "icon": "fa-solid fa-cloud-sun" },
+      "evening": { "text": "晚上好，", "icon": "fa-solid fa-cloud-moon" }
+    },
+    "style": {
+      "tip": "主題"
+    },
+    "language": {
+      "tip": "語言",
+      "prompt": "語言選項",
+      "options": ["英文", "中文"]
     }
   },
   "test": "你好 世界"

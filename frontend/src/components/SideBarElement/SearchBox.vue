@@ -6,7 +6,7 @@ const searchText = ref('');
 
 <template>
   <div>
-    <div class="bg-stone-200 dark:bg-slate-900 mb-4 relative rounded flex items-center px-2 py-1.5 text-sm">
+    <div class="bg-stone-200 dark:bg-slate-800 mb-4 relative rounded flex items-center px-2 py-1.5 text-sm">
       <i class="fas fa-search text-sm mr-2 text-gray-800 dark:text-gray-400"></i>
       <input 
         id="search-input" name="search" type="text" :placeholder="$i18n.locale === 'zh-TW' ? '搜尋' : 'Search'" v-model="searchText" 

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, computed } from 'vue'
+import { ref, watch, computed, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
@@ -9,16 +9,25 @@ const props = defineProps({
   }
 });
 
-const items = useI18n({ useScope: 'global' }).tm('sidebar.commands');
+const { tm } = useI18n({ useScope: 'global' });
+const items = computed(() => tm('sidebar.commands'));
 const isFocused = ref(false);
 watch(
   () => props.modelValue,
   (newVal, oldVal) => {
-    if (typeof newVal === 'string' && !items.some(item => item.label === newVal) && newVal != oldVal) {
+    if (typeof newVal === 'string' && !items.value.some(item => item.label === newVal) && newVal != oldVal) {
       isFocused.value = true;
     }
   }
 );
+
+watch(isFocused, (open) => {
+  if (open) window.addEventListener('keydown', handleEscape);
+  else window.removeEventListener('keydown', handleEscape);
+})
+const handleEscape = (e) => {
+  if (e.key === 'Escape') isFocused.value = false;
+}
 
 const emit = defineEmits(['update:modelValue']);
 function handleSelect(item) {
@@ -29,8 +38,8 @@ function handleSelect(item) {
 }
 
 const filteredItems = computed(() => {
-  if (!props.modelValue || typeof props.modelValue !== 'string') return items;
-  return items.filter(item =>
+  if (!props.modelValue || typeof props.modelValue !== 'string') return items.value;
+  return items.value.filter(item =>
     item.label.toLowerCase().includes(props.modelValue.toLowerCase())
   );
 });
@@ -38,6 +47,10 @@ const filteredItems = computed(() => {
 const showDropdown = computed(() => 
   isFocused.value && typeof props.modelValue === 'string' && props.modelValue.trim().length > 0
 );
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleEscape)
+})
 </script>
 
 <template>

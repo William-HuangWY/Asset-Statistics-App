@@ -22,5 +22,21 @@
       "button": "Support"
     }
   },
+  "topbar": {
+    "greeting": {
+      "general": { "text": "Welcome, ", "icon": "fa-solid fa-user" },
+      "morning": { "text": "Good morning, ", "icon": "fa-solid fa-mountain-sun" },
+      "afternoon": { "text": "Good afternoon, ", "icon": "fa-solid fa-cloud-sun" },
+      "evening": { "text": "Good evening, ", "icon": "fa-solid fa-cloud-moon" }
+    },
+    "style": {
+      "tip": "Style"
+    },
+    "language": {
+      "tip": "language",
+      "prompt": "language option",
+      "options": ["English", "Chinese"]
+    }
+  },
   "test": "Hello, World"
 }
