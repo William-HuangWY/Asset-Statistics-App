@@ -1,9 +1,9 @@
 <script setup>
-// todo: add a home page for the app
+import Grid from '../components/Grid.vue';
 </script>
 
 <template>
   <div>
-    Home Page
+    <Grid />
   </div>
 </template>

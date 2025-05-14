@@ -7,7 +7,7 @@ import FooterBox from './SideBarElement/FooterBox.vue';
 
 <template>
   <div>
-    <div class="overflow-y-scroll z-[100] sticky top-4 h-[calc(100vh-32px-48px)]">
+    <div class="overflow-y-auto [&::-webkit-scrollbar]:hidden z-[100] sticky top-4 h-[calc(100vh-32px-48px)]">
       <AccountBox />
       <SearchBox />
       <RouteLinks />
