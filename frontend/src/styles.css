@@ -1,4 +1,6 @@
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant c-md (@media (min-width: 960px));
+@custom-variant c-lg (@media (min-width: 1230px));
 @import "tailwindcss";
 
 @theme {

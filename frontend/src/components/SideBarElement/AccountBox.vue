@@ -7,10 +7,10 @@
       alt="avatar" class="size-8 rounded shrink-0 bg-[rgb(48,47,47)] shadow"
       >
       <div class="text-start">
-        <span class="text-sm text-gray-800 dark:text-gray-200 font-bold block">
+        <span class="text-[13px] md:text-sm text-gray-800 dark:text-gray-200 font-bold block">
           {{ $t('sidebar.account') }}
         </span>
-        <span class="text-xs text-gray-500 dark:text-gray-400 font-normal block">
+        <span class="text-[11px] md:text-xs text-gray-500 dark:text-gray-400 font-normal block">
           codeying@weiyinghuang.com
         </span>
         <i class="fa-solid fa-chevron-down absolute right-2 top-1/2 translate-y-[calc(-50%+4px)] text-[9px] text-gray-600 dark:text-gray-300"></i>

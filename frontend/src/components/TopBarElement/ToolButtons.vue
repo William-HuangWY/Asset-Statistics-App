@@ -27,8 +27,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="flex items-center gap-3.5">
-    <label class="group relative inline-block cursor-pointer w-16 h-7 align-middle select-none" :title="$tm('topbar.style.tip')">
+  <div class="flex items-center gap-3 sm:gap-3.5">
+    <label class="group relative inline-block cursor-pointer w-14 h-6 sm:w-16 sm:h-7 align-middle select-none" :title="$tm('topbar.style.tip')">
       <input
         id="theme-toggle"
         type="checkbox"
@@ -41,8 +41,8 @@ onBeforeUnmount(() => {
           bg-stone-200 group-hover:bg-stone-300 peer-checked:bg-slate-800 dark:group-hover:bg-slate-700"
       ></div>
       <div
-        class="absolute top-0.5 left-1 w-6 h-6 rounded-full bg-white dark:bg-stone-200 
-          flex items-center justify-center transition-all duration-200 peer-checked:translate-x-8"
+        class="absolute top-0.5 left-1 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white dark:bg-stone-200 
+          flex items-center justify-center transition-all duration-200 peer-checked:translate-x-7 sm:peer-checked:translate-x-8"
       >
         <i :class="[ 
           isDark ? 'fa-solid fa-moon' : 'fa-solid fa-sun',
@@ -56,22 +56,22 @@ onBeforeUnmount(() => {
       <div v-if="languageMenuOpen" @click="languageMenuOpen = false" class="fixed inset-0 z-20 bg-transparent"></div>
       <button
         @click="languageMenuOpen = !languageMenuOpen" :title="$tm('topbar.language.tip')"
-        class="relative flex items-center gap-1 px-3 py-[5px] w-25 rounded-md cursor-pointer focus-visible:outline-none
+        class="relative flex items-center gap-1 px-3 py-[5px] w-23 sm:w-25 rounded-md cursor-pointer focus-visible:outline-none
           bg-stone-200 dark:bg-slate-800 hover:bg-stone-300 dark:hover:bg-slate-700 
           text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-blue-200 transition-colors"
       >
         <i class="fa-solid fa-globe pr-1"></i>
-        <span class="text-sm font-medium">
+        <span class="text-[12px] sm:text-sm font-medium">
           {{ $i18n.locale === 'en' ? 'EN' : '中文' }}
         </span>
-        <i class="fa-solid fa-chevron-down ml-auto transition-transform duration-200" :class="{ 'rotate-180': languageMenuOpen }"></i>
+        <i class="text-[14px] sm:text-[16px] fa-solid fa-chevron-down ml-auto transition-transform duration-200" :class="{ 'rotate-180': languageMenuOpen }"></i>
       </button>
       <div 
         v-if="languageMenuOpen" 
         @click="languageMenuOpen = false" 
         class="absolute right-0 mt-2 w-40 bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 rounded-md shadow-lg overflow-hidden z-50"
       >
-        <div class="capitalize px-4 py-2 border-b border-gray-200 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-300 font-semibold">
+        <div class="capitalize text-[13px] sm:text-[14.5px] px-4 py-2 border-b border-gray-200 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-300 font-semibold">
           {{ $t('topbar.language.prompt') }}
         </div>
         <ul>
@@ -83,7 +83,7 @@ onBeforeUnmount(() => {
               saveLanguage(lang);
               languageMenuOpen = false;
             }"
-            class="px-4 py-2 cursor-pointer text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-700 flex items-center justify-between"
+            class="text-[14px] sm:text-[16px] px-4 py-2 cursor-pointer text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-700 flex items-center justify-between"
           >
             <span class="capitalize">{{ lang }}</span>
             <i v-if="filterLanguage(lang) === $i18n.locale" class="fa-solid fa-check text-blue-600 dark:text-sky-400"></i>
@@ -91,5 +91,12 @@ onBeforeUnmount(() => {
         </ul>
       </div>
     </div>
+
+    <button
+      class="md:hidden cursor-pointer pl-2 mr-2 text-lg sm:text-xl text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-blue-200"
+      @click="$emit('toggle-sidebar')"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
 </template>

@@ -55,7 +55,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="relative">
-    <div v-if="showDropdown" @click="isFocused = false" class="fixed z-40 inset-0 bg-stone-950/50 pointer-events-auto"></div>
+    <div v-if="showDropdown" @click="isFocused = false" class="fixed z-40 inset-0 pointer-events-auto"></div> <!-- bg-stone-950/50 -->
     <div v-if="showDropdown" class="absolute z-50 mt-[-10px] w-full overflow-x-hidden bg-white dark:bg-slate-800 border border-gray-300 dark:border-gray-700 rounded shadow-lg">
       <div class="py-2 px-4 border-b text-gray-700 dark:text-gray-200 font-semibold text-sm">
         Suggestions

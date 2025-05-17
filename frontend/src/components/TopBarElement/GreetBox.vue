@@ -38,11 +38,11 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <span class="text-sm text-gray-900 dark:text-gray-100 font-bold block">
+    <span class="text-[12px] sm:text-sm pt-[3px] sm:pt-0 text-gray-900 dark:text-gray-100 font-bold block">
       <i :class="$t(`topbar.greeting.${timePeriod}.icon`)"></i>
       &nbsp;
       {{ $t(`topbar.greeting.${timePeriod}.text`) + $t('sidebar.account').split('-').at(-1).trim(' ') }}!
     </span>
-    <span class="text-xs block pt-1 text-stone-500 dark:text-gray-400">{{ formattedDate }}</span>
+    <span class="text-[10px] sm:text-xs block pt-0.5 sm:pt-1 pb-0.5 sm:pb-0 text-stone-500 dark:text-gray-400">{{ formattedDate }}</span>
   </div>
 </template>
