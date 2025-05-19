@@ -1,8 +1,8 @@
 <script setup>
-import { ref, watch, onBeforeUnmount } from 'vue'
+import { ref, watch, onBeforeUnmount } from 'vue';
 import { toggleTheme } from '../../theme.js';
 const languageMenuOpen = ref(false);
-const isDark = ref(localStorage.getItem('theme') === 'dark')
+const isDark = ref(localStorage.getItem('theme') === 'dark');
 
 function filterLanguage(language) {
   if (language === 'English' || language === '英文') return 'en';
@@ -22,7 +22,7 @@ watch(languageMenuOpen, (open) => {
   else window.removeEventListener('keydown', handleEscape);
 })
 onBeforeUnmount(() => {
-  window.removeEventListener('keydown', handleEscape)
+  window.removeEventListener('keydown', handleEscape);
 })
 </script>
 

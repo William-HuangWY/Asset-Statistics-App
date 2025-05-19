@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { useI18n } from 'vue-i18n' // <i class="fa-solid fa-mug-hot"></i> 🚀☕🌅☀️🌤️🌙
+import { useI18n } from 'vue-i18n'; // <i class="fa-solid fa-mug-hot"></i> 🚀☕🌅☀️🌤️🌙
 
 const { locale } = useI18n({ useScope: 'global' });
 const currentDate = ref(new Date());

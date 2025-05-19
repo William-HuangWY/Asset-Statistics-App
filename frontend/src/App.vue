@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import SideBar from './components/SideBar.vue'
-import TopBar from './components/TopBar.vue'
+import SideBar from './components/SideBar.vue';
+import TopBar from './components/TopBar.vue';
 
 const isSidebarOpen = ref(false);
 let mediaQuery = null;
@@ -13,8 +13,7 @@ const handleResize = () => {
 onMounted(() => {
   const cookieLocaleRow = document.cookie
     .split('; ')
-    .find(row => row.startsWith('locale='))
-    .split('=')[1];
+    .find(row => row.startsWith('locale='));
   let existingLocale = cookieLocaleRow ? cookieLocaleRow.split('=')[1] : null;
   if (existingLocale != null && existingLocale !== 'en' && existingLocale !== 'zh-TW') existingLocale = null;
   if (existingLocale == null) document.cookie = 'locale=en';
@@ -45,7 +44,7 @@ onBeforeUnmount(() => {
       @click="isSidebarOpen = false"
     ></div>
 
-    <div class="bg-white dark:bg-slate-900 rounded-lg pb-4 shadow h-[100vh]">
+    <div class="bg-white dark:bg-slate-900 rounded-lg pb-4 shadow">
       <TopBar @toggle-sidebar="isSidebarOpen = !isSidebarOpen"/>
       <router-view />
     </div>

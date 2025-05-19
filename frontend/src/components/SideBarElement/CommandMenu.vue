@@ -1,6 +1,6 @@
 <script setup>
-import { ref, watch, computed, onBeforeUnmount } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, watch, computed, onBeforeUnmount } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
   modelValue: {
