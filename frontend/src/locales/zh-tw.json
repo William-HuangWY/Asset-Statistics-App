@@ -47,7 +47,13 @@
   },
   "overview": {
     "title": "近期趨勢",
-    "nodeName": "價值"
+    "nodeName": "價值",
+    "ylabels": ["一月", "二月", "三月", "四月", "五月", "六月"]
+  },
+  "compare": {
+    "title": "投資組合",
+    "dataLabels": ["去年", "今年"],
+    "categories": ["現金", "股票", "加密貨幣", "不動產", "其餘資產"]
   },
   "test": "你好 世界"
 }

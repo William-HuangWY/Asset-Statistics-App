@@ -47,7 +47,13 @@
   },
   "overview": {
     "title": "Activity",
-    "nodeName": "value"
+    "nodeName": "value",
+    "ylabels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+  },
+  "compare": {
+    "title": "Portfolio",
+    "dataLabels": ["Last Year", "This Year"],
+    "categories": ["Cash", "Stocks", "Crypto", "Real Estate", "Others"]
   },
   "test": "Hello, World"
 }

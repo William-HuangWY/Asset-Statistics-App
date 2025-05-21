@@ -5,7 +5,6 @@ import ApexCharts from 'apexcharts';
 
 const props = defineProps({
   data: { type: Array, required: true },
-  categories: { type: Array, required: true },
 });
 
 const { t, tm, locale } = useI18n({ useScope: 'global' });
@@ -15,7 +14,7 @@ const isDark = ref(false);
 function getOptions() {
   return {
     chart: {
-      type: 'area', height: 256,
+      type: 'area', height: 280,
       toolbar: { show: false }, zoom: { enabled: false },
       background: 'transparent', fontFamily: 'inherit',
     },
@@ -36,7 +35,7 @@ function getOptions() {
       data: props.data,
     }],
     xaxis: {
-      categories: props.categories,
+      categories: tm('overview.ylabels'),
       labels: { style: { colors: isDark.value ? '#e2e8f0' : '#1c1917' } }, // x-label-text
       axisBorder: { color: isDark.value ? '#475569' : '#d6d3d1' }, // horizontal border
       axisTicks: { color: isDark.value ? '#475569' : '#d6d3d1' }, // x-tick
@@ -72,7 +71,7 @@ watch([isDark, locale], () => {
 <template>
   <div class="overflow-hidden rounded border bg-stone-50 dark:bg-slate-900 border-stone-300 dark:border-slate-600">
     <div class="p-4 text-base font-bold text-stone-800 dark:text-slate-300">
-      <h3><i class="fa-regular fa-user pr-2"></i>{{ $t('overview.title') }}</h3>
+      <h3><i class="fa-solid fa-chart-line pr-2"></i>{{ $t('overview.title') }}</h3>
     </div>
     <div ref="chartEl" class="w-full h-full px-4 pb-6"></div>
   </div>
