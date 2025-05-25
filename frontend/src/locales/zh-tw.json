@@ -1,4 +1,7 @@
 {
+  "currency": {
+
+  },
   "sidebar": {
     "account": "資產狀態 - 打碼的穎",
     "links": [
@@ -54,6 +57,20 @@
     "title": "投資組合",
     "dataLabels": ["去年", "今年"],
     "categories": ["現金", "股票", "加密貨幣", "不動產", "其餘資產"]
+  },
+  "list": {
+    "title": "近期交易明細",
+    "button": "查看全部",
+    "header": ["單號", "類型", "時間", "價值"],
+    "type": {
+      "income": "收入",
+      "expense": "花費",
+      "transfer": "轉帳",
+      "stock": "股票交易",
+      "crypto": "加密貨幣交易",
+      "estate": "房地產",
+      "others": "其他財產"
+    }
   },
   "test": "你好 世界"
 }

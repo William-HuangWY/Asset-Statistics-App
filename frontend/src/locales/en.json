@@ -1,4 +1,7 @@
 {
+  "currency": {
+
+  },
   "sidebar": {
     "account": "AssetStats - CodeYing",
     "links": [
@@ -54,6 +57,20 @@
     "title": "Portfolio",
     "dataLabels": ["Last Year", "This Year"],
     "categories": ["Cash", "Stocks", "Crypto", "Real Estate", "Others"]
+  },
+  "list": {
+    "title": "Recent Transactions",
+    "button": "See All",
+    "header": ["ID", "Type", "Time", "Value"],
+    "type": {
+      "income": "Income",
+      "expense": "Expense",
+      "transfer": "Transfer",
+      "stock": "Stock Trading",
+      "crypto": "Crypto Exchange",
+      "estate": "Real Estate",
+      "others": "Other Assets"
+    }
   },
   "test": "Hello, World"
 }
