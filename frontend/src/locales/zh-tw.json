@@ -5,11 +5,11 @@
   "sidebar": {
     "account": "資產狀態 - 打碼的穎",
     "links": [
-      { "label": "總覽", "icon": "fa-solid fa-house"},
-      { "label": "存款", "icon": "fa-solid fa-coins" },
-      { "label": "股票", "icon": "fa-solid fa-arrow-trend-up" },
-      { "label": "明細", "icon": "fa-solid fa-receipt" },
-      { "label": "其他", "icon": "fa-solid fa-circle-info" }
+      { "label": "總覽", "icon": "fa-solid fa-house", "url": "/"} ,
+      { "label": "存款", "icon": "fa-solid fa-coins", "url": "/deposit" },
+      { "label": "股票", "icon": "fa-solid fa-arrow-trend-up", "url": "/stock" },
+      { "label": "明細", "icon": "fa-solid fa-receipt", "url": "/transaction" },
+      { "label": "其他", "icon": "fa-solid fa-circle-info", "url": "/others" }
     ],
     "commands": [
       { "label": "測試1", "url": "/Test1", "icon": "fa-solid fa-plus" },

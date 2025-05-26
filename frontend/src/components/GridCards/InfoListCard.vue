@@ -15,7 +15,7 @@ const props = defineProps({
     </div>
     <table class="w-full table-auto">
       <thead>
-        <tr class="text-sm font-normal text-stone-500 dark:text-stone-300">
+        <tr class="text-xs sm:text-sm font-normal text-stone-500 dark:text-stone-300">
           <th v-for="(item, index) in header" :key="index" class="text-start p-1.5">{{ item }}</th>
           <th class="w-8"></th>
         </tr>
@@ -24,7 +24,7 @@ const props = defineProps({
         <tr 
           v-for="(row, rowIndex) in body"
           :key="rowIndex"
-          :class="rowIndex % 2 ? 'text-sm' : 'bg-stone-100 dark:bg-slate-800 text-sm'"
+          :class="rowIndex % 2 ? 'text-xs sm:text-sm' : 'bg-stone-100 dark:bg-slate-800 text-xs sm:text-sm'"
         >
           <td v-for="(cellVal, cellIndex) in row" :key="cellIndex" class="p-1.5">
             <template v-if="cellIndex === 0">
@@ -42,8 +42,8 @@ const props = defineProps({
               </span>
             </template>
           </td>
-          <td class="w-8">
-            <button class="text-sm size-8 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-slate-700 transition-colors gird place-content-center rounded">
+          <td class="w-6 sm:w-8 text-center">
+            <button class="text-xs sm:text-sm size-6 sm:size-8 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-slate-700 transition-colors gird place-content-center rounded">
               <i class="fa-solid fa-ellipsis"></i>
             </button>
           </td>

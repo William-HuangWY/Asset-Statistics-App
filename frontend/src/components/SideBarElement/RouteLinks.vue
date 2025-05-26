@@ -1,7 +1,10 @@
 <script setup>
+import { useRoute } from 'vue-router';
+const route = useRoute();
+
 const Route = (selected = false, icon = '', title = '') => {
   const isSelected = (selected === true || selected === 'true');
-  const iconColor = isSelected ? 'text-[rgb(255,86,86)] dark:text-[rgb(255,90,90)]' : '';
+  const iconColor = isSelected ? 'text-stone-600 dark:text-blue-300' : '';
   const classes = isSelected 
     ? 'bg-white dark:bg-slate-500 text-stone-950 dark:text-stone-100 shadow'
     : 'hover:bg-stone-200 dark:hover:bg-slate-700 bg-trabsparent text-stone-500 dark:text-slate-400 shadow-none';
@@ -22,7 +25,8 @@ const Route = (selected = false, icon = '', title = '') => {
     <div
       v-for="(item, index) in $tm('sidebar.links')"
       :key="index"
-      v-html="Route(false, item.icon, item.label)"
+      @click="$router.push(item.url)"
+      v-html="Route(route.path === item.url, item.icon, item.label)"
     ></div>
   </div>
 </template>

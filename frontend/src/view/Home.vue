@@ -1,9 +1,9 @@
 <script setup>
-import Grid from '../components/Grid.vue';
+import OverviewGrid from '../components/OverviewGrid.vue';
 </script>
 
 <template>
   <div>
-    <Grid />
+    <OverviewGrid />
   </div>
 </template>
