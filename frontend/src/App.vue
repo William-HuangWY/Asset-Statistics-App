@@ -44,9 +44,9 @@ onBeforeUnmount(() => {
       @click="isSidebarOpen = false"
     ></div>
 
-    <div class="bg-white dark:bg-slate-900 rounded-lg pb-4 shadow">
+    <div class="flex flex-col min-h-[calc(100vh-2rem)] bg-white dark:bg-slate-900 rounded-lg pb-4 shadow">
       <TopBar @toggle-sidebar="isSidebarOpen = !isSidebarOpen"/>
-      <router-view />
+      <div class="flex-1"><router-view /></div>
     </div>
   </div>
 </template>

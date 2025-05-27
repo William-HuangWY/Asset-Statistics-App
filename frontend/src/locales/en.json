@@ -67,7 +67,7 @@
       "expense": "Expense",
       "transfer": "Transfer",
       "stock": "Stock Trading",
-      "crypto": "Crypto Exchange",
+      "crypto": "Crypto",
       "estate": "Real Estate",
       "others": "Other Assets"
     }

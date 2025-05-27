@@ -93,7 +93,7 @@ onBeforeUnmount(() => {
     </div>
 
     <button
-      class="md:hidden cursor-pointer pl-2 mr-2 text-lg sm:text-xl text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-blue-200"
+      class="md:hidden cursor-pointer pl-2 mr-2 text-lg sm:text-xl focus-visible:outline-none text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-blue-200"
       @click="$emit('toggle-sidebar')"
     >
       <i class="fas fa-bars"></i>
